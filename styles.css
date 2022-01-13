@@ -1,0 +1,84 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0px;
+}
+
+nav {
+  height: 80px;
+}
+
+nav > ul,
+nav > ul > li,
+nav > ul > li > h2 {
+  height: 100%;
+}
+
+.collapsed-items-container ul {
+  margin-top: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.collapsed-items-container li {
+  background-color: white;
+  padding: 16px;
+  border-radius: 16px;
+}
+
+.collapsed-items-container li:hover {
+  background-color: gainsboro;
+}
+
+.collapsed-items-container > h2::after {
+  margin-left: 10px;
+  content: '\2193';
+}
+
+ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+nav > ul {
+  background-color: burlywood;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav > ul > li {
+  flex: 1 1 0;
+  padding: 16px;
+  border-radius: 10px;
+}
+
+nav > ul > li:hover {
+  background-color: rgb(240, 202, 152);
+}
+
+nav h2 {
+  margin: 0px;
+  padding: 0px;
+  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hidden,
+.collapsed-items-container .hidden {
+  visibility: hidden;
+}
